@@ -19,11 +19,17 @@ var screenShotPath ='';
 
 const createWindow = () => {
   // Create the browser window.
-    mainWindow = new BrowserWindow({
-    width: 350,
-    height: 680,
-    icon: path.join(__dirname, '../render/assets/favicon.png'),
+  mainWindow = new BrowserWindow({
+    width: 330,
+    height: 700,
+    icon: path.join(__dirname, 'assets/icon.ico'),
     autoHideMenuBar: true,
+    backgroundColor: '#ffff',
+    fullscreenable: true,
+    titleBarStyle: 'customButtonsOnHover',
+    transparent: true,
+    frame: true,
+    roundedCorners: false,
     webPreferences: {
       enableRemoteModule: true,
       nodeIntegration: true,
